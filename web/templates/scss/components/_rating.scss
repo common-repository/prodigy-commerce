@@ -1,0 +1,47 @@
+$star-icon-content: '\e941';
+$star-icon-size: 24px;
+
+
+.prodigy-star-rating {
+  position: relative;
+  width: $star-icon-size * 5;
+  height: $star-icon-size;
+  font-family: 'icomoon';
+  line-height: 1;
+  letter-spacing: 0;
+  color: color(grey-300);
+
+  &:before {
+    content: $star-icon-content + $star-icon-content + $star-icon-content + $star-icon-content + $star-icon-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+  }
+}
+
+#et-boc .et-l div .prodigy-star-rating__item,
+.prodigy-star-rating__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $star-icon-size;
+  overflow: hidden;
+  color: color(yellow-100);
+  white-space: nowrap;
+
+  &:before {
+    content: $star-icon-content + $star-icon-content + $star-icon-content + $star-icon-content + $star-icon-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.prodigy-product-list__item-rating {
+  margin-bottom: 0;
+
+  .prodigy-star-rating:before {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,25 @@
+// sass-lint:disable no-ids
+// sass-lint:disable class-name-format
+// sass-lint:disable no-qualifying-elements
+
+.prodigy-admin-custom-template {
+  .prodigy-manage-column {
+    &.column-status,
+    &.column-sale_price {
+      width: 6%;
+    }
+    &.column-regular_price {
+      width: 8%;
+    }
+    &.column-sku {
+      width: 7%;
+    }
+    &.column-thumb {
+      width: 10%;
+    }
+    &.column-handle {
+      width: 10%;
+    }
+  }
+}
+// sass-lint:enable class-name-format

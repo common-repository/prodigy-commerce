@@ -1,0 +1,57 @@
+.prodigy-admin-custom-template {
+    .prodigy-primary-cell {
+        width: 100%;
+        vertical-align: middle !important;
+        position: relative;
+        @include media-breakpoint-down(md) {
+            padding-right: 48px !important;
+        }
+        @include media-breakpoint-up(md) {
+            width: auto;
+        }
+    }
+    .prodigy-primary-cell__btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 12px;
+        right: 6px;
+        width: 36px;
+        height: 36px;
+        background-color: transparent;
+        border: none;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    .prodigy-primary-cell__btn--show {
+        transform: rotate(180deg);
+    }
+    .prodigy-hidden-cell {
+        display: none !important;
+        @include media-breakpoint-up(md) {
+            display: table-cell !important;
+        }
+    }
+    .prodigy-primary-cell__txt-mobile {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    .prodigy-primary-cell__mobile-content {
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: none !important;
+        }
+    }
+    .prodigy-primary-cell__mobile-content--show {
+        display: block;
+    }
+    .prodigy-primary-cell__txt {
+        display: none !important;
+        @include media-breakpoint-up(md) {
+            display: block !important;
+        }
+    }    
+}

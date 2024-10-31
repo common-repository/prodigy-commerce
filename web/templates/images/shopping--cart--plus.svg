@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>shopping--cart--plus</title>
+    <g id="Selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-menu" transform="translate(-1392, -243)">
+            <g id="shopping--cart--plus" transform="translate(1392, 243)">
+                <circle id="Oval" fill="#49463D" fill-rule="nonzero" cx="7.5" cy="21" r="1.5"></circle>
+                <circle id="Oval" fill="#49463D" fill-rule="nonzero" cx="18" cy="21" r="1.5"></circle>
+                <path d="M3.73545,2.102925 C3.66534034,1.7523467 3.35751994,1.5 3,1.5 L0,1.5 L0,3 L2.385,3 L5.26455,17.397075 C5.33465966,17.7476533 5.64248006,18 6,18 L19.5,18 L19.5,16.5 L6.615,16.5 L6.015,13.5 L19.5,13.5 C19.851512,13.5 20.1558719,13.255886 20.23215,12.91275 L21.933375,5.25 L20.397825,5.25 L18.89865,12 L5.715,12 L3.73545,2.102925 Z" id="Path" fill="#49463D" fill-rule="nonzero"></path>
+                <polygon id="Path" fill="#49463D" fill-rule="nonzero" points="13.5 4.5 13.5 1.5 12 1.5 12 4.5 9 4.5 9 6 12 6 12 9 13.5 9 13.5 6 16.5 6 16.5 4.5"></polygon>
+                <rect id="_Transparent_Rectangle_" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

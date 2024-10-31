@@ -1,0 +1,43 @@
+.prodigy-admin-custom-template {
+  .settins-container {
+    margin-right: 12px;
+  }
+  .prodigy-plugin-settings__select, 
+  .prodigy-plugin-settings__input {
+    width: 100%;
+  }
+  .prodigy-plugin-settings__subtitle {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .plugin-settings__modal .modal-dialog {
+    max-width: 600px;
+    margin-top: 20px;
+    background-color: white;
+  }
+  .prodigy-plugin-settings__modal-body {
+    padding: 24px;
+  }
+  .prodigy-plugin-settings__modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 16px 24px 24px;
+    border-top: none;
+  }
+  @media screen and (min-width: 768px) {
+    .settins-container {
+      margin-right: 0;
+    }
+    .plugin-settings__api {
+      display: flex;
+    }
+  }
+  .prodigy_settings__wrapper {
+    max-width: 568px;
+    .hidden{
+      display: none;
+    }
+  }  
+}

@@ -1,0 +1,11 @@
+.prodigy-sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 1.8;
+  height: 40px;
+  border-radius: 0;
+  select {
+    height: 40px;
+  }
+}

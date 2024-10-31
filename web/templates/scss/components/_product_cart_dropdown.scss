@@ -1,0 +1,278 @@
+.prodigy-custom-template {
+  .prodigy-cart-dropdown {
+    position: relative;
+    .prodigy-cart-dropdown__menu {
+      @media (max-width: 320px) {
+        position: fixed;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .prodigy-cart-dropdown__menu {
+    width: 346px;
+    margin-top: 16px !important;
+    padding-top: 8px !important;
+    padding-bottom: 16px !important;
+    border: none;
+    border-radius: 0;
+    color: color(blue-500);
+    filter: drop-shadow(0 7px 24px rgba(42, 54, 88, 0.12));
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      border: 6px solid transparent;
+      border-bottom-color: white;
+    }
+    &.dropdown-menu-right {
+      @media screen and (max-width: 767.9px) {
+        right: unset;
+        left: 0;
+      }
+      &:before {
+        right: 32px;
+        @media screen and (max-width: 475.9px) {
+          right: 300px;
+        }
+      }
+    }
+    &.dropdown-menu-left:before {
+      left: 32px;
+    }
+    .prodigy-cart-dropdown__footer {
+      a:not(.prodigy-main-button--outline){
+        color: white;
+      }
+    }
+    button {
+      cursor: pointer;
+    }
+    @include media-breakpoint-up(md) {
+      right: 12px;
+    }
+  }
+  .prodigy-cart-dropdown__empty {
+    @include body-font-2();
+  }
+  .prodigy-cart-dropdown__header {
+    position: relative;
+    padding: 16px;
+  }
+  
+  .prodigy-cart-dropdown__alert--info {
+    background-color: color(grey-250);
+    color: color(blue-500);
+  }
+  
+  .prodigy-subscription-alert {
+    column-gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  img.icon-img {
+    width: auto;
+    height: 1em;
+    font-size: 24px;
+  }
+  
+  .prodigy-cart-dropdown__alert-txt {
+    line-height: (18 / 14);
+  }
+
+  .prodigy-product__info {
+    .prodigy-cart-dropdown__alert-txt {
+      margin-left: 12px;
+    }
+  }
+  
+  .prodigy-cart-dropdown__alert--default {
+    color: white;
+    background-color: color(blue-500);
+  }
+  
+  .prodigy-cart-dropdown__error-alert {
+    display: flex;
+    padding: 8px 16px;
+    background-color: color(red-300, 0.2);
+    color: color(red-300);
+    font-size: 14px;
+  }
+  
+  .prodigy-cart-dropdown__body {
+    max-height: 42vh;
+    padding-right: 16px;
+    padding-left: 16px;
+    overflow-y: auto;
+  }
+  .prodigy-cart-item {
+    @include word-break();
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid color(grey-400);
+    a {
+      padding: 0;
+      color: color(blue-500);
+    }
+  }
+  .prodigy-cart-item__info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 16px;
+    color: color(blue-600);
+    font-size: 14px;
+  }
+  .prodigy-cart-dropdown__footer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .prodigy-cart-dropdown__header-title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: inherit;
+  }
+  .prodigy-cart-dropdown__header-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0;
+    height: auto;
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 12px;
+    color: black !important;
+    &:hover,
+    &:focus {
+      color: black;
+      background-color: transparent;
+      outline: none;
+    }
+  }
+  .prodigy-cart-item__img {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    color: currentColor;
+    width: 96px;
+    height: 96px;
+    margin-right: 12px;
+    border: 1px solid;
+    font-size: 40px;
+    object-fit: contain;
+    border: 1px solid color(grey-450);
+    background-color: color(grey-500);
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+    }
+  }
+  .prodigy-cart-item__info-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .prodigy-cart-item__info-price__count {
+    color: color(blue-600);
+  }
+  .prodigy-cart-item__info-price__value {
+    margin-left: 8px;
+    color: color(blue-600);
+    font-weight: 800;
+  }
+  .prodigy-cart-item__info-variants {
+    margin-top: 0;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .prodigy-cart-item__info-variants__name {
+    margin-right: 4px;
+  }
+  .prodigy-cart-item__tag {
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    background-color: #e8eef1;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: (12 / 10);
+  }
+  .prodigy-cart-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid color(grey-400);
+  }
+  .prodigy-cart-total__text {
+    color: color(blue-500);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .prodigy-cart-total__value {
+    color: color(blue-500);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 800;
+  }
+  .prodigy-cart-dropdown__title {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .prodigy-cart-item-subscr__item {
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  .prodigy-cart-item-subscr__condition {
+    margin-right: 4px;
+    color: color(grey-100);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .prodigy-cart-item-subscr__value {
+    font-size: 12px;
+    word-break: break-word;
+  }
+}
+.prodigy-cart-dropdown__alert {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: rgba(147, 195, 52, 0.3);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+a.prodigy-cart-item__info-title {
+  margin-bottom: 8px;
+  color: color(blue-500);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+  word-break: break-word;
+  text-decoration: none;
+}

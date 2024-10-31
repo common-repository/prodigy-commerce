@@ -1,0 +1,20 @@
+$input-height: 40px;
+
+.prodigy-custom-template {
+  .prodigy-main-input {
+    padding: 0;
+    padding-left: 8px;
+    min-height: $input-height;
+    color: color(blue-500);
+    background-color: white;
+    border: 1px solid color(grey-300);
+    font-size: 14px;
+    &:focus {
+      border-color: color(blue-600);
+    }
+    &:is(textarea) {
+      padding-top: 8px;
+      line-height: 1.5;
+    }
+  }
+}

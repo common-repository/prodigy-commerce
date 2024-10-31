@@ -1,0 +1,64 @@
+.prodigy-sort-container.prodigy-custom-template {
+  margin-bottom: 40px;
+
+  .prodigy-sort-container__inner {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prodigy-sort-container__col {
+    background-color: transparent;
+  }
+
+  .prodigy-top-bar {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      padding: 30px 0;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .prodigy-breadcrumbs {
+      padding: 10px 0;
+      background-color: transparent;
+    }
+
+    .prodigy-sort {
+      margin-left: auto;
+      padding: 16px;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 767.9px) and (min-width: 544px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 0;
+      }
+
+      .prodigy-main-select {
+        width: 100%;
+        margin-top: 16px;
+
+        @include media-breakpoint-up(sm) {
+          margin-top: 0;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.prodigy-sort-container.prodigy-custom-template {
+  .prodigy-top-bar .prodigy-sort {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

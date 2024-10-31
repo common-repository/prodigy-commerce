@@ -1,0 +1,25 @@
+.prodigy-breadcrumbs.prodigy-custom-template {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 0;
+
+  @include media-breakpoint-up(md) {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+
+  .prodigy-breadcrumbs__item-divider {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .prodigy-breadcrumbs__item a,
+  .prodigy-breadcrumbs__item-link {
+    text-decoration: none;
+  }
+}

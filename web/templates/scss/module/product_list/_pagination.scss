@@ -1,0 +1,18 @@
+.prodigy-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.prodigy-pagination__nav,
+.prodigy-pagination__item {
+  padding: 4px 8px;
+  text-decoration: none;
+  line-height: 1.8;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.prodigy-pagination__item--active {
+  background-color: color(grey-250);
+}

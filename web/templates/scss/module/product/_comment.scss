@@ -1,0 +1,52 @@
+.prodigy-custom-template {
+  h3.prodigy-product__name {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  .prodigy-product__comment-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .prodigy-product__comment-subtitle {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .prodigy-comment__rating.selected {
+    .prodigy-comment__star {
+      color: color(yellow-100);
+      &.active ~ .prodigy-comment__star {
+        color: black;
+      }
+    }
+  }
+  .prodigy-comment__star {
+    color: color(grey-350);
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    box-shadow: none;
+    font-size: 24px;
+    text-decoration: none;
+    text-indent: -999em;
+    &:visited {
+      color: color(grey-350);
+    }
+    &:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1em;
+      height: 1em;
+      line-height: 1;
+      text-indent: 0;
+    }
+    &:hover {
+      color: color(yellow-100);
+    }
+  }  
+}

@@ -1,0 +1,225 @@
+.prodigy-shop-sidebar-wrap {
+  padding-left: 0;
+}
+.prodigy-shop-sidebar {
+  overflow-x: hidden !important;
+  padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    padding-top: 45px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
+  .prodigy-shop-sidebar__btn-close {
+    border: none;
+    background-color: transparent;
+    color: color(blue-500);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    .icon.icon-close {
+      font-size: 16px;
+      &:before {
+        font-size: 16px;
+        color: color(blue-500);
+      }
+    }
+  }
+  .prodigy-divider-block {
+    padding-top: 8px;
+    @media screen and (max-width: 1023.9px) {
+      padding-top: 15px;
+      margin-left: -1.5em;
+      margin-right: -1.5em;
+    }
+  }
+  .prodigy-filter__main {
+    .prodigy-search {
+      margin-top: 25px;
+    }
+    .prodigy-divider-block {
+      padding-top: 0;
+      margin: 20px 0;
+      @media screen and (max-width: 1023.9px) {
+        padding-top: 0;
+        &.prodigy-divider-header {
+          margin-left: -1.5em;
+          margin-right: -1.5em;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1023.9px) {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    z-index: 1001;
+    background-color: white;
+    overflow: auto;
+    transform: translateX(120%);
+    transition: transform 0.5s;
+
+    &.prodigy-shop-sidebar--open {
+      transform: translateX(0%);
+      padding-left: 1em;
+      padding-right: 1em;
+
+      ~.prodigy-shop-sidebar-backdrop {
+        display: block;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    top: 15vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 85vh;
+    z-index: 1001;
+    background-color: white;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+
+    &.prodigy-shop-sidebar--open {
+      transform: translateY(0);
+    }
+  }
+  .prodigy-cart-dropdown {
+    width: 100%;
+  }
+
+  .prodigy-cart-dropdown__menu {
+    width: 100%;
+
+    .prodigy-cart-item {
+      flex-wrap: wrap;
+
+      a {
+        margin-bottom: 16px;
+      }
+
+      .prodigy-cart-item__info {
+        max-width: 108px;
+      }
+    }
+  }
+
+  [aria-expanded="true"] .prodigy-filter__card-btn .icon.icon-arrow-down,
+  .filter__browse button.prodigy-filter__card-btn[aria-expanded="true"]>.icon.icon-arrow-down {
+    transform: rotateZ(180deg);
+    &:before {
+      right: 8px;
+    }
+  }
+
+  [aria-expanded="false"] .prodigy-filter__card-btn .icon.icon-arrow-down,
+  .filter__browse button.prodigy-filter__card-btn[aria-expanded="false"]>.icon.icon-arrow-down {
+    transform: rotateZ(0deg);
+  }
+}
+
+.prodigy-shop-sidebar-backdrop,
+.prodigy-shop-sidebar+div:before {
+  display: none;
+
+  @media screen and (max-width: 1023.9px) {
+    position: fixed;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(black, 0.5);
+  }
+}
+
+.prodigy-shop-sidebar-backdrop {
+  background-color: transparent;
+}
+
+.prodigy-shop-sidebar+div:before {
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.prodigy-shop-sidebar.prodigy-shop-sidebar--open+div:before {
+  display: block;
+}
+
+.prodigy-shop-sidebar+div:after {
+  display: none;
+}
+
+.prodigy-shop-sidebar.prodigy-shop-sidebar--open+div:after {
+  display: block;
+}
+
+.prodigy-shop-sidebar-btn {
+  position: fixed;
+  display: none;
+  top: 45px;
+  right: 20px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: color(blue-500);
+  background-color: transparent !important;
+  padding: 0;
+  height: auto;
+  z-index: 1002;
+  cursor: pointer;
+  &:hover {
+    color: initial;
+  }
+
+  .icon {
+    font-size: 18px;
+    &:before {
+      color: color(blue-500);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    top: 20px;
+  }
+}
+
+.prodigy-custom-template {
+  .prodigy-shop-sidebar-btn {
+    top: 45px;
+    @include media-breakpoint-down(sm) {
+      top: 20px;
+    }
+  }
+}
+
+.prodigy-elementor-wrapper {
+  .prodigy-shop-sidebar-btn {
+    top: 65px;
+    @include media-breakpoint-down(sm) {
+      top: 40px;
+    }
+  }
+}
+
+.prodigy-shop-sidebar--open {
+  .prodigy-shop-sidebar-btn {
+    display: block;
+  }
+}
+
+.prodigy-overflow-y-hidden {
+  overflow-y: hidden;
+}

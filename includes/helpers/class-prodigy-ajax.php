@@ -1,0 +1,68 @@
+<?php
+namespace Prodigy\Includes\Helpers;
+
+/**
+ * Prodigy Template Helper
+ *
+ * @version    3.0.2
+ * @package    Prodigy
+ * @subpackage Prodigy/includes
+ */
+class Prodigy_Ajax {
+
+	public function __construct() {
+		add_action( 'wp_ajax_google-captcha-url', array( $this, 'google_captcha_url' ) );
+		add_action( 'wp_ajax_nopriv_google-captcha-url', array( $this, 'google_captcha_url' ) );
+		add_action( 'wp_ajax_prodigy-is-admin', array( $this, 'check_user_is_admin_ajax' ) );
+		add_action( 'wp_ajax_nopriv_prodigy-is-admin', array( $this, 'check_user_is_admin_ajax' ) );
+	}
+
+	/**
+	 * Get google captcha
+	 */
+	public function google_captcha_url() {
+		$data = array();
+		header( 'Content-Type: application/json' );
+		error_reporting( E_ALL ^ E_NOTICE );
+		$captcha = '';
+		if ( isset( $_POST['g-recaptcha-response'] ) ) {
+			$captcha = esc_url_raw( wp_unslash( ( $_POST['g-recaptcha-response'] ) ) );
+		}
+		if ( ! $captcha ) {
+			$data = array( 'nocaptcha' => 'true' );
+			echo wp_json_encode( $data );
+			exit;
+		}
+
+		if ( ! empty( get_option( 'pg_captcha_secret_key' ) ) ) {
+			$address = isset( $_SERVER['REMOTE_ADDR'] ) ? esc_url_raw( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+			// calling google recaptcha api.
+			$response = wp_remote_get( 'https://www.google.com/recaptcha/api/siteverify?secret=' . get_option( 'pg_captcha_secret_key' ) . '&response=' . $captcha . '&remoteip=' . $address );
+			// validating result.
+			$responseKeys = wp_remote_retrieve_body( $response );
+			if ( $responseKeys['success'] == false ) {
+				$data = array( 'spam' => 'true' );
+				echo wp_json_encode( $data );
+			} else {
+				$data = array( 'spam' => 'false' );
+				echo wp_json_encode( $data );
+			}
+			wp_die();
+		} else {
+			exit;
+		}
+	}
+
+	/**
+	 * check user is admin
+	 */
+	public function check_user_is_admin_ajax() {
+		$user = wp_get_current_user();
+		if ( ! empty( $user->roles ) && $user->roles[0] === 'administrator' ) {
+			echo true;
+		} else {
+			echo false;
+		}
+		wp_die();
+	}
+}

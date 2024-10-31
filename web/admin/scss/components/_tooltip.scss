@@ -1,0 +1,30 @@
+.prodigy-admin-custom-template {
+  .prodigy-tooltip {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+  }
+  .prodigy-tooltip:hover .prodigy-tooltip__message {
+    display: block;
+  }
+  .prodigy-tooltip__message {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    z-index: 1;
+    white-space: normal;
+    text-align: start;
+    line-height: 16px;
+    margin-left: 4px;
+    top: 50%;
+    left: 100%;
+    width: 228px;
+    padding: 8px;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    background-color: rgba(color(grey-700), 0.9);
+    box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
+    color: white;
+    font-size: 12px;
+  }
+}

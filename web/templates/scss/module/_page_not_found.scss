@@ -1,0 +1,27 @@
+.prodigy-custom-template {
+  .prodigy-page-not-found {
+    max-width: 479px;
+    margin: 92px auto 92px;
+    text-align: center;
+  }
+  .prodigy-page-not-found__error {
+    margin-bottom: 20px;
+    color: #d4d7de;
+    font-size: 102px;
+    line-height: (129 / 102);
+  }
+  .prodigy-page-not-found__title {
+    margin-bottom: 12px;
+    color: color(blue-500);
+    font-size: 20px;
+    line-height: (25 / 20);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .prodigy-page-not-found__txt {
+    margin-bottom: 24px;
+    color: color(blue-600);
+    font-size: 14px;
+    line-height: (18 / 14);
+  }  
+}

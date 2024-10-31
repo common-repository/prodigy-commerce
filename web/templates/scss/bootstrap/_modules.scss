@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'custom';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.prodigy-custom-template {
+    @import '~bootstrap/scss/modal';
+    @import '~bootstrap/scss/grid';
+    @import '~bootstrap/scss/nav';
+    @import '~bootstrap/scss/utilities/align';
+    @import '~bootstrap/scss/utilities/flex';
+    @import '~bootstrap/scss/utilities/display';
+    @import '~bootstrap/scss/utilities/overflow';
+    @import '~bootstrap/scss/utilities/position';
+    @import '~bootstrap/scss/dropdown';
+    @import '~bootstrap/scss/tooltip';
+}

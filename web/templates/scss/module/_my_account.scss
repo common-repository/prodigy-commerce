@@ -1,0 +1,13 @@
+.prodigy-my-account__container.prodigy-custom-template {
+  display: flex;
+
+  .prodigy-my-account__link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    i {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "prgicon";
+  src: url("../fonts/prgicon.ttf?hmpqkn") format("truetype"),
+	url("../fonts/prgicon.woff?hmpqkn") format("woff"),
+	url("../fonts/prgicon.svg?hmpqkn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="prgicon-"],
+[class*=" prgicon-"] {
+  font-family: "prgicon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 44px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.prgicon-active-filters:before {
+  content: "\e91b";
+}
+.prgicon-add-to-cart:before {
+  content: "\e900";
+}
+.prgicon-breadcrumbs:before {
+  content: "\e901";
+}
+.prgicon-cart:before {
+  content: "\e910";
+}
+.prgicon-cart-menu:before {
+  content: "\e90e";
+}
+.prgicon-categories:before {
+  content: "\e902";
+}
+.prgicon-category:before {
+  content: "\e903";
+}
+.prgicon-my-account:before {
+  content: "\e90f";
+}
+.prgicon-price-filter:before {
+  content: "\e918";
+}
+.prgicon-price-range:before {
+  content: "\e904";
+}
+.prgicon-product-categories:before {
+  content: "\e919";
+}
+.prgicon-product-data-tabs:before {
+  content: "\e905";
+}
+.prgicon-product-description:before {
+  content: "\e906";
+}
+.prgicon-product-filters:before {
+  content: "\e91a";
+}
+.prgicon-product-images:before {
+  content: "\e907";
+}
+.prgicon-product-meta:before {
+  content: "\e908";
+}
+.prgicon-product-rating:before {
+  content: "\e909";
+}
+.prgicon-product-search:before {
+  content: "\e917";
+}
+.prgicon-product-sorting:before {
+  content: "\e90d";
+}
+.prgicon-product-title:before {
+  content: "\e90a";
+}
+.prgicon-products:before {
+  content: "\e90b";
+}
+.prgicon-related-products:before {
+  content: "\e90c";
+}
+.prgicon-thank-you:before {
+  content: "\e911";
+}

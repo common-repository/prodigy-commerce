@@ -1,0 +1,44 @@
+.prodigy-custom-template {
+  .comment-respond {
+    padding: 0 !important;
+    .prodigy-review-modal__body-section {
+      display: flex;
+    }
+    .prodigy-review-modal__body-section--column {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .comment-reply-title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+    .comment-form-rating {
+      margin-bottom: 32px;
+    }
+    .prodigy-comment__text {
+      height: 120px;
+      resize: none;
+    }
+  }
+  
+  .prodigy-review-modal__content {
+    a.prodigy-review-modal__icon-close {
+      text-decoration: none;
+    }
+  
+    input.prodigy-main-input {
+      width: 100%;
+    }
+  }
+  
+  p.comment-form-cookies-consent {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px !important;
+    label {
+      margin-bottom: 0;
+      margin-left: 8px;
+      padding: 0;
+    }
+  }  
+}

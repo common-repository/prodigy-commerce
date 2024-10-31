@@ -1,0 +1,117 @@
+#et-boc .et-l div,
+.prodigy-custom-template {
+  .prodigy-categories {
+    position: relative;
+    .prodigy-related__products-nav {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .slick-list {
+      margin: 0 -12px;
+    }
+  }
+  .prodigy-categories-slider {
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 80px;
+    }
+  }
+  .prodigy-categories__card {
+    display: block;
+    aspect-ratio: 0.55;
+    background-clip: content-box !important;
+    background-color: color(grey-30);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+  }
+  .et_pb_module a.prodigy-categories__card {
+    padding-bottom: 0 !important;
+  }
+  .prodigy-categories__card-wrap {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    &.slick-slide {
+      margin: 0 12px;
+    }
+  }
+  .prodigy-categories__card-title {
+    position: absolute;
+    z-index: 2;
+    padding: 16px;
+    right: 0;
+    left: 0;
+    bottom: 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba($color: white, $alpha: 0.96);
+    pointer-events: none;
+    transition: background-color 0.2s;
+  }
+  .prodigy-categories__card-title--top {
+    top: 24px;
+    bottom: auto;
+  }
+  .prodigy-categories__card-title--middle {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  .prodigy-categories__card-title--left {
+    margin-left: 0;
+  }
+  .prodigy-categories__card-title--right {
+    margin-right: 0;
+  }
+  .prodigy-categories__card-title--below {
+    position: static;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+  }
+  .prodigy-categories__card-title-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: color(blue-500);
+    text-transform: uppercase;
+    word-break: break-all;
+  }
+  .prodigy-categories__card-title-name-amount {
+    font-size: 12px;
+    color: color(blue-200);
+    text-transform: uppercase;
+  }
+  h3.prodigy-related__products-title {
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 1px solid $border-color;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .prodigy-related__products-item-title {
+    text-decoration: none;
+  }
+}
+#et-boc .et-l div,
+.et-l div  {
+  .prodigy-categories__card-title-name,
+  .prodigy-categories__card-title-name-amount,
+  h3.prodigy-related__products-title {
+    text-transform: inherit;
+    font-variant: normal;
+  }
+  .prodigy-categories__card-title-name:only-child {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .prodigy-categories-slider {
+    margin-bottom: 0;
+  }
+}
+.divi_prodigy_categories_0 .prodigy-categories__card-title-name:only-child {
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+}

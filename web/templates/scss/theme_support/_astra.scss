@@ -1,0 +1,164 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/custom";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.header-main-layout-2 {
+  .prodigy-navbar-cart-wrapper {
+    justify-content: center;
+  }
+}
+
+.ast-header-break-point {
+  .prodigy-navbar-cart-wrapper {
+    flex-grow: 0;
+  }
+
+  .ast-mobile-header-stack {
+    .prodigy-navbar-cart-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .header-main-layout-1 {
+    &.ast-mobile-header-inline {
+      .prodigy-navbar-cart-wrapper {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .header-main-layout-2 {
+    &.ast-mobile-header-inline {
+      .prodigy-navbar-cart-wrapper {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .header-main-layout-3 {
+    .prodigy-cart-dropdown__menu {
+      right: auto;
+      left: -48px;
+
+      &:before {
+        left: 32px;
+        right: auto;
+      }
+    }
+
+    &.ast-mobile-header-inline {
+      .prodigy-navbar-cart-wrapper {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.single.prodigy-wrapper-container,
+.tax-prodigy-product-shop,
+.tax-prodigy-product-category.prodigy-wrapper-container,
+.tax-prodigy-product-tag.prodigy-wrapper-container {
+  .ast-container {
+    #prodigy-primary {
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .ast-right-sidebar {
+      #primary {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.prodigy-navbar-cart-wrapper {
+  margin-top: 6px;
+  margin-left: 0;
+  margin-right: 0;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
+
+.prodigy-navbar-cart {
+  min-width: 48px;
+  margin: 0 4px;
+  padding: 0 20px !important;
+  justify-content: space-between;
+}
+
+.site-footer,
+.sidebar-main,
+.prodigy-shop-sidebar {
+  .prodigy-cart-dropdown__menu {
+    position: static;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 544px) {
+  .prodigy-sort-container.prodigy-custom-template .prodigy-top-bar .prodigy-sort {
+    padding: 16px 0;
+    flex-wrap: wrap;
+  }
+}
+
+.prodigy-sort__results {
+  @media (max-width: 544px) {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+}
+
+.prodigy-empty-cart {
+  height: calc(100vh - 410px);
+}
+
+.ast-single-post .entry-content {
+  .prodigy-product-list__item-title>a,
+  a.prodigy-cart-item__info-title {
+    text-decoration: none;
+  }
+}
+
+.prodigy-custom-template {
+  .prodigy-main-button,
+  .prodigy-navbar-cart,
+  .mfp-close,
+  .prodigy-product__gallery-icon,
+  .prodigy-filter__sm-btn,
+  .prodigy-product__gallery-icon,
+  .prodigy-related__products-nav {
+    letter-spacing: normal;
+  }
+
+  .prodigy-empty-cart {
+    height: calc(100vh - 410px);
+  }
+}
+
+.tax-prodigy-product-shop {
+  .prodigy-top-bar .prodigy-breadcrumbs.prodigy-custom-template {
+    padding: 10px 0;
+  }
+  .prodigy-customized-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.prodigy-navbar-cart:before {
+  content: "astra";
+}

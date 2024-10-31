@@ -1,0 +1,61 @@
+.prodigy-custom-template {
+  .prodigy-subscriptions-tab__container {
+    gap: 16px;
+    margin-bottom: 16px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 16px;
+    }
+  }
+  .prodigy-subscriptions-content {
+    >.tab-pane {
+      padding: 12px 10px;
+      height: 100%;
+      background-color: white;
+      border: 1px solid color(grey-300);
+      border-top: none;
+      display: block;
+    }
+  }
+  .prodigy-subscriptions-tab__item-wrap {
+    &.prodigy-subscriptions-tab--price {
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  .prodigy-subscriptions-tab__item-holder {
+    white-space: nowrap;
+  }
+  .prodigy-subscriptions-content__table {
+    border: none;
+    width: auto;
+    font-size: 14px;
+    color: color(blue-600);
+    margin: 0;
+    td {
+      padding: 0;
+      vertical-align: top;
+    }
+    .prodigy-subscriptions-content__table-cell {
+      padding-right: 8px;
+      .prodigy-subscriptions-content__table-cell-title {
+        color: color(grey-300);
+        line-height: 1.8;
+      }
+    }
+    .prodigy-main-radio {
+      margin-right: 8px;
+    }
+    .prodigy-main-radio__label {
+      color: color(grey-100);
+      white-space: nowrap;
+    }
+    .prodigy-main-radio:hover .prodigy-main-radio__label,
+    .prodigy-main-radio__field:checked ~ .prodigy-main-radio__label {
+      color: color(blue-500);
+    }
+    .prodigy-main-radio:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}

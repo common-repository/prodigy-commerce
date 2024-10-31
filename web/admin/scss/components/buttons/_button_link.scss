@@ -1,0 +1,23 @@
+.prodigy-admin-custom-template {
+  &.prodigy-admin-wrap {
+    .prodigy-button-link {
+      color: color(grey-blue-500);
+      font-weight: 700;
+      text-decoration: none;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .prodigy-button-link--grey {
+      opacity: 0.5;
+    }
+    .prodigy-button-link--pink {
+      color: color(red-500);
+      font-size: 12px;
+    }
+    .prodigy-button-link--pink:hover {
+      color: color(red-500);
+    }
+  }
+}

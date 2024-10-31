@@ -1,0 +1,66 @@
+{
+  "timestamp": 1561218720,
+  "upgrade_notice": {
+    "version": "2.0.0",
+    "message": "",
+    "update_link": ""
+  },
+  "library": {
+    "types_data": {
+      "block": {
+        "categories": [
+          "prodigy product",
+          "prodigy archive"
+        ]
+      },
+      "popup": {
+        "categories": [
+          "bottom bar",
+          "classic",
+          "fly-in",
+          "full screen",
+          "hello bar",
+          "slide-in"
+        ]
+      }
+    },
+    "categories": [
+      "prodigy product",
+      "prodigy archive"
+    ],
+    "templates": [
+      {
+        "id": 1,
+        "title": "Hero 112323",
+        "thumbnail": "https://prodigycommerce-wp-demo-content.s3.us-east-2.amazonaws.com/Examples/product-1.png",
+        "tmpl_created": "1520443695",
+        "author": "Elementor",
+        "url": "https://prodigycommerce-wp-demo-content.s3.us-east-2.amazonaws.com/Examples/product-preview.png",
+        "type": "block",
+        "subtype": "prodigy product",
+        "tags": "[\"hero\"]",
+        "menu_order": "0",
+        "popularity_index": "0",
+        "trend_index": "0",
+        "access_level": "1",
+        "has_page_settings": "0"
+      },
+      {
+        "id": 2,
+        "title": "Hero 112323",
+        "thumbnail": "https://prodigycommerce-wp-demo-content.s3.us-east-2.amazonaws.com/Examples/shop.png",
+        "tmpl_created": "1520443695",
+        "author": "Elementor",
+        "url": "https://prodigycommerce-wp-demo-content.s3.us-east-2.amazonaws.com/Examples/shop-preview.png",
+        "type": "block",
+        "subtype": "prodigy archive",
+        "tags": "[\"hero\"]",
+        "menu_order": "0",
+        "popularity_index": "0",
+        "trend_index": "0",
+        "access_level": "1",
+        "has_page_settings": "0"
+      }
+    ]
+  }
+}

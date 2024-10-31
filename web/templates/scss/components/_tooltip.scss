@@ -1,0 +1,37 @@
+.prodigy-custom-template {
+  .prodigy-tooltip {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    &:hover {
+      .prodigy-tooltip__message {
+        display: block;
+      }
+      .icon {
+        color: #008eff;
+      }
+    }
+    .icon {
+      color: #a6abbc;
+      font-size: 14px;
+      transition: color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+  .prodigy-tooltip__message {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 184px;
+    padding: 4px 8px;
+    background-color: #445668;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: normal;
+  }  
+}

@@ -1,0 +1,187 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/custom";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.prodigy-sort-container,
+.prodigy-catalog,
+.prodigy-cart,
+.prodigy-container,
+.wp-block-columns--prodigy,
+.prodigy-categories-slider,
+.prodigy-feature-products-slider,
+.prodigy-thank-you-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+.entry-content .prodigy-cart.container-fluid {
+  width: 100% !important;
+  max-width: var(--responsive--alignwide-width) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site a.prodigy-tabs__tabs-link:focus {
+  outline: none !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+.prodigy-cart {
+  .row.sss {
+    padding: 10px;
+  }
+}
+.prodigy-cart__table-info {
+  min-width: 146px;
+}
+.primary-navigation-open .primary-navigation {
+  z-index: 5;
+}
+.prodigy-cart__table-info {
+  font-size: var(--global--font-size-xs);
+}
+.prodigy-cart__table-info-title {
+  font-size: var(--global--font-size-base);
+}
+.prodigy-navbar-cart-wrapper {
+  display: flex !important;
+}
+.prodigy-cart-item__info-title:hover {
+  text-decoration: none;
+}
+.prodigy-cart-dropdown__menu .prodigy-cart-dropdown__footer {
+  .prodigy-main-button {
+    display: flex;
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .prodigy-main-button--outline {
+    color: #2a3658;
+    &:hover {
+      color: white;
+    }
+    &:focus {
+      color: #2a3658;
+    }
+  }
+}
+@media screen and (max-width: 481.9px) {
+  .prodigy-navbar-cart-wrapper {
+    left: -10px;
+  }
+}
+@media screen and (max-width: 767.9px){
+  .prodigy-cart-dropdown__menu.dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+}
+.prodigy-navbar-cart:before {
+  content: 'twenty-twenty-one';
+}
+.prodigy-cart__table {
+  th {
+    color: color(blue-550);
+  }
+  th,
+  td {
+    border-color: #d9dbe1;
+  }
+  @media screen and (max-width: 767.9px) {
+    border-top: 1px solid #d9dbe1;
+  }
+}
+.prodigy-entry-content-width {
+  .entry-content {
+    > :first-child:not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+      max-width: var(--responsive--alignwide-width) !important;
+      .prodigy-cart__wrapper.cart-items-list-js.col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .prodigy-cart__table .sku {
+    line-height: 1.15;
+  }
+  p.prodigy-cart__total-price {
+    line-height: 1;
+  }
+  .cart-subtotal-js {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.prodigy-top-bar .prodigy-sort {
+  @media screen and (max-width: 767.9px) and (min-width: 320px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+table.prodigy-cart__table {
+  tr.item-container-js:first-of-type td {
+    @media screen and (max-width: 767.9px) {
+      border-top: 1px solid #d9dbe1;
+    }
+  }
+}
+
+.prodigy-custom-template {
+  .prodigy-divider-block.prodigy-divider-block--light {
+    border-color: #d9dbe1;
+  }
+  .prodigy-replace-product__modal-head .prodigy-close-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2a3658 !important;
+    background-color: transparent !important;
+  }
+  .prodigy-replace-product__modal-footer {
+    .prodigy-secondary-button.close-subscription-popup-js {
+      color: #2a3658;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .prodigy-shop-sidebar>.prodigy-filter__main .prodigy-main-badge__md {
+    top: -8px;
+  }
+  .prodigy-filter__badges {
+    font-size: 15px;
+  }
+  button.prodigy-filter__card-btn {
+    background-color: transparent !important;
+  }
+  .prodigy-search-filter .prodigy-filter__sm-btn.d-lg-none {
+    background-color: white;
+    color: #000;
+  }
+}
+.prodigy-sort-container.prodigy-custom-template {
+  .prodigy-top-bar .prodigy-sort {
+    padding: 16px 0;
+  }
+}
+button#select-toggle-btn {
+  background-color: transparent;
+}
+.prodigy-elementor-wrapper .prodigy-shop-sidebar-btn {
+  top: 55px;
+  @include media-breakpoint-down(sm) {
+    top: 30px;
+  }
+}
+.filter-widget-container-js:before, 
+.prodigy-filter__accordion:before {
+  @include media-breakpoint-down(sm) {
+    top: 0;
+  }
+}

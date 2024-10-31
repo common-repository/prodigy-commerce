@@ -1,0 +1,22 @@
+.prodigy-custom-template {
+  button.prodigy-icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 0;
+    color: color(grey-400);
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    &:hover,
+    &:focus {
+      color: color(blue-500);
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

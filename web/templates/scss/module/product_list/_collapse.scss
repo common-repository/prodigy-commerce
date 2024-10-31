@@ -1,0 +1,69 @@
+.prodigy-custom-template {
+  .collapse:not(.show) {
+    display: none;
+  }
+
+  .prodigy-product__accordion {
+    &:before {
+      display: block;
+      position: relative;
+      content: '';
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid color(grey-350);
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .prodigy-product__accordion-card {
+    border-bottom: 1px solid $border-color;
+
+    [aria-expanded="true"] .icon.icon-arrow-down {
+      transform: rotateZ(180deg);
+      &:before {
+        position: relative;
+        left: -8px;
+      }
+    }
+    [aria-expanded="false"] .icon.icon-arrow-down {
+      transform: rotateZ(0deg);
+    }
+  }
+  
+  h5.prodigy-product__accordion-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-transform: uppercase;
+    color: color(blue-600);
+    cursor: pointer;
+    flex-grow: 1;
+  }
+
+  .prodigy-product__accordion-card-btn {
+    border: none !important;
+    cursor: pointer;
+
+    &.prodigy-icon-btn {
+      .icon.icon-arrow-down:before {
+        position: relative;
+        right: -8px;
+        color: color(blue-500);
+      }
+    }
+  }
+
+  .prodigy-product__accordion-card-body {
+    margin-bottom: 8px;
+    #prodigy-tabs__desc {
+      p {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

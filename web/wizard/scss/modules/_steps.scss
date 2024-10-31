@@ -1,0 +1,83 @@
+.steps {
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+  counter-reset: step;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.step {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  @include media-md {
+    width: 33.33%;
+  }
+  &:before {
+    content: counter(step);
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-left: auto;
+    border: 1px solid color(grey-400);
+    border-radius: 50%;
+    background-color: color(grey-100);
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    counter-increment: step;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 11px;
+    left: -50%;
+    width: 100%;
+    height: 1px;
+    background-color: color(grey-400);
+  }
+  &:first-child:after {
+    content: none;
+  }
+}
+.step--active {
+  &:before {
+    border-color: color(green-200);
+    background-color: color(green-200);
+    color: white;
+  }
+}
+.step--active + .step:after {
+  background-color: color(blue-400);
+}
+.step--complete + .step:after {
+  background-color: color(grey-900);
+}
+.step--complete {
+  color: color(grey-600);
+  &::before {
+    border-color: color(green-200);
+    background-color: color(grey-100);
+    color: color(grey-600);
+  }
+  + .step:after {
+    background-color: color(green-200);
+  }
+}
+.step--next-disabled + .step {
+  color: color(grey-350);
+  &:after {
+    background-color: color(grey-50);
+  }
+  &:before {
+    background-color: color(grey-50);
+    color: color(grey-350);
+    border-color: color(grey-50);
+  }
+}

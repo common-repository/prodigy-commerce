@@ -1,0 +1,120 @@
+.prodigy-custom-template {
+  @each $font in (0, 14, 16, 18, 20, 36) {
+    .font-#{$font} {
+      font-size: #{$font}px !important;
+    }
+  }
+  .font-12 {
+    font-size: 12px;
+    line-height: (14 / 12);
+  }
+  .font-24 {
+    font-size: 24px;
+  }
+  @each $margin-left in (0, 4, 8, 16, 20) {
+    .ml-#{$margin-left} {
+      margin-left: #{$margin-left}px !important;
+    }
+  }
+  
+  @each $margin-right in (0, 4, 8, 16, 24, 32, 48) {
+    .mr-#{$margin-right} {
+      margin-right: #{$margin-right}px !important;
+    }
+  }
+  @each $margin-bottom in (0, 8, 16, 20, 32, 40, 48, 80) {
+    .mb-#{$margin-bottom} {
+      margin-bottom: #{$margin-bottom}px !important;
+    }
+  }
+  @each $margin-top in (0, 12, 16, 20, 48, 80) {
+    .mt-#{$margin-top} {
+      margin-top: #{$margin-top}px !important;
+    }
+  }
+  @each $padding in (0, 4) {
+    .p-#{$padding} {
+      padding: #{$padding}px !important;
+    }
+  }
+  @each $padding-left in (0, 4, 16) {
+    .pl-#{$padding-left} {
+      padding-left: #{$padding-left}px !important;
+    }
+  }
+  @each $padding-right in (0, 4, 14, 16, 20, 32) {
+    .pr-#{$padding-right} {
+      padding-right: #{$padding-right}px !important;
+    }
+  }
+  @each $height in ('auto', '0px', '18px') {
+    .height-#{$height} {
+      height: #{$height} !important;
+    }
+  }
+  @each $cursor-variant in (pointer) {
+    .cursor-#{$cursor-variant} {
+      cursor: $cursor-variant;
+    }
+  }
+  @each $text in (left, right, center) {
+    .text-#{$text} {
+      text-align: $text;
+    }
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .min-w-217 {
+    min-width: 217px;
+  }
+  .in-green-100 {
+    color: color(green-100);
+  }
+  .in-grey-100 {
+    color: color(grey-100);
+  }
+  .in-blue-600 {
+    color: color(blue-600);
+  }
+  .bold {
+    font-weight: bold !important;
+  }
+  .font-500 {
+    font-weight: 500 !important;
+  }
+  .relative {
+    position: relative !important;
+  }
+  .static {
+    position: static !important;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+  .font-800 {
+    font-weight: 800;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+  .text-nowrap {
+    white-space: nowrap;
+  }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .sr-only {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+  }
+  .flex-1 {
+    flex: 1;
+  }  
+}

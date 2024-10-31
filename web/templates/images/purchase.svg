@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>purchase</title>
+    <g id="Selected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account-menu" transform="translate(-1392, -462)">
+            <g id="purchase" transform="translate(1392, 462)">
+                <path d="M21,4.5 L3,4.5 C2.17157288,4.5 1.5,5.17157288 1.5,6 L1.5,18 C1.5,18.8284271 2.17157288,19.5 3,19.5 L21,19.5 C21.8284271,19.5 22.5,18.8284271 22.5,18 L22.5,6 C22.5,5.17157288 21.8284271,4.5 21,4.5 Z M21,6 L21,8.25 L3,8.25 L3,6 L21,6 Z M3,18 L3,9.75 L21,9.75 L21,18 L3,18 Z" id="Shape" fill="#49463D" fill-rule="nonzero"></path>
+                <rect id="Rectangle" fill="#49463D" fill-rule="nonzero" x="4.5" y="15" width="7.5" height="1.5"></rect>
+                <rect id="_Transparent_Rectangle_" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

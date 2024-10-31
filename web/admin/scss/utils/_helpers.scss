@@ -1,0 +1,123 @@
+.prodigy-admin-custom-template {
+  @each $margin-left in (12, 16, 20) {
+    .ml-#{$margin-left} {
+      margin-left: #{$margin-left}px !important;
+    }
+  }
+  @each $margin-right in (8, 12, 20, 30, 40) {
+    .mr-#{$margin-right} {
+      margin-right: #{$margin-right}px !important;
+    }
+  }
+  @each $margin-bottom in (0, 2, 5, 8, 12, 16, 20, 26, 40) {
+    .mb-#{$margin-bottom} {
+      margin-bottom: #{$margin-bottom}px !important;
+    }
+  }
+  @each $margin-top in (8) {
+    .mt-#{$margin-top} {
+      margin-top: #{$margin-top}px !important;
+    }
+  }
+  @each $padding-left in (0, 4, 12) {
+    .pl-#{$padding-left} {
+      padding-left: #{$padding-left}px !important;
+    }
+  }
+  @each $padding-right in (0) {
+    .pr-#{$padding-right} {
+      padding-right: #{$padding-right}px !important;
+    }
+  }
+  @each $width in (40, 56, 62, 100, 120, 160, 180, 210, 230, 250, 320, 400) {
+    .width-#{$width} {
+      width: #{$width}px !important;
+    }
+  }
+  @each $height in (28, 33, 35) {
+    .height-#{$height} {
+      height: #{$height}px !important;
+    }
+  }
+  @each $font-size in (12, 14, 20) {
+    .font-#{$font-size} {
+      font-size: #{$font-size}px !important;
+    }
+  }
+  @each $font-weight in (700) {
+    .font-#{$font-weight} {
+      font-weight: #{$font-weight} !important;
+    }
+  }
+  @each $display in (block, flex, inline-block, none) {
+    .d-#{$display} {
+      display: $display !important;
+    }
+  }
+  @each $color in (green-150, red-500) {
+    .in-#{$color} {
+      color: color($color) !important;
+    }
+  }
+  .width-full {
+    width: 100%;
+  }
+  .max-width-400 {
+    max-width: 400px !important;
+  }
+  .height-auto {
+    height: auto !important;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .visible-md-up {
+    display: none;
+  }
+  .flex-align-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .opacity-50 {
+    opacity: 0.5;
+  }
+  .line-through {
+    text-decoration: line-through;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  .align-items-start {
+    align-items: flex-start !important;
+  }
+  .align-items-center {
+    align-items: center !important;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .float-right {
+    float: right;
+  }
+  @media screen and (max-width: 768px) {
+    .visible-md-up {
+      display: none !important;
+    }
+    .mobile-field {
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+    .mb-12-mob {
+      margin-bottom: 12px !important;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .hidden-md-up {
+      display: none;
+    }
+    .visible-md-up {
+      display: block;
+    }
+  }  
+}

@@ -1,0 +1,33 @@
+.prodigy-custom-template {
+  .prodigy-main-radio {
+    display: flex;
+    cursor: pointer;
+    &:hover .prodigy-main-radio__icon {
+      color: color(blue-500);
+    }
+  }
+  .prodigy-main-radio__field:focus ~ .prodigy-main-radio__icon {
+    color: color(blue-500);
+  }
+  .prodigy-main-radio__field:checked ~ {
+    .prodigy-main-radio__icon--off {
+      display: none;
+    }
+    .prodigy-main-radio__icon--on {
+      display: block;
+      color: color(blue-500);
+    }
+  }
+  .prodigy-main-radio__icon {
+    line-height: 24px;
+    font-size: 24px;
+    margin-right: 4px;
+    color: color(grey-300);
+  }
+  .prodigy-main-radio__icon--on {
+    display: none;
+  }
+  .prodigy-main-radio__label {
+    line-height: 24px;
+  }
+}

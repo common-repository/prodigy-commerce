@@ -1,0 +1,17 @@
+.link-wizard {
+  font-size: 14px;
+  color: color(blue-400);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  svg {
+    transform: rotate(90deg);
+    margin-right: 0;
+  }
+}
+.link-wizard--grey {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: color(grey-500);
+}
+

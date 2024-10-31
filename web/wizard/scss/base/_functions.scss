@@ -1,0 +1,6 @@
+@function color($color) {
+  @return map-get($app-colors, $color);
+}
+@function z-index($z-index) {
+  @return map-get($z-indexes, $z-index);
+}

@@ -1,0 +1,57 @@
+.prodigy-admin-custom-template {
+	.visually-hidden {
+		position: absolute !important;
+		clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0 !important;
+		border: 0 !important;
+		height: 1px !important;
+		width: 1px !important;
+		overflow: hidden;
+	}
+	.in-grey-blue-500 {
+		color: color(grey-blue-500);
+	}
+	.opacity-05 {
+		opacity: 0.5;
+	}
+	@each $font in (18) {
+		.font-#{$font} {
+			font-size: #{$font}px !important;
+		}
+	}
+	@each $size in (4, 12) {
+		.ml-#{$size} {
+			margin-left: #{$size}px !important;
+		}
+		.mr-#{$size} {
+			margin-right: #{$size}px !important;
+		}
+		.mt-#{$size} {
+			margin-top: #{$size}px !important;
+		}
+		.mb-#{$size} {
+			margin-bottom: #{$size}px !important;
+		}
+	}
+	@each $size in (0, 4, 16, 20) {
+		.pl-#{$size} {
+			padding-left: #{$size}px !important;
+		}
+		.pr-#{$size} {
+			padding-right: #{$size}px !important;
+		}
+		.pt-#{$size} {
+			padding-top: #{$size}px !important;
+		}
+		.pb-#{$size} {
+			padding-bottom: #{$size}px !important;
+		}
+	}
+	.min-height-auto {
+		min-height: auto !important;
+	}
+	.loading {
+		animation: rotate 1.3s infinite linear;
+	}
+}

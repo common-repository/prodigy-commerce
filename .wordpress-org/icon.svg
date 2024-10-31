@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="128" height="128"></rect>
+        <g id="prodigy-logo" transform="translate(27.000000, 21.000000)" fill="#008EFF">
+            <path d="M24,16 L24,34 L9,43 L9,25 L24,16 L24,16 Z M34,0 L0,20 L0,60 L34,40 L34,0 L34,0 Z" id="Shape"></path>
+            <path d="M49,16 L64,25 L64,43 L49,34 L49,16 L49,16 Z M40,0 L40,39.895288 L74,60 L74,20.104712 L40,0 L40,0 Z" id="Shape"></path>
+            <path d="M36.5,57 L52,66 L36.5,75 L21,66 L36.5,57 L36.5,57 Z M36.5,46 L3,65.8425197 L36.5,86 L70,66.1574803 L36.5,46 L36.5,46 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+.prodigy-admin-custom-template {
+    .prodigy-products-list-header {
+        margin-bottom: 16px;
+    }
+    .prodigy-products-list-header__title {
+        margin-top: 20px;
+        margin-bottom: 12px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+    .prodigy-products-list__sort {
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+}

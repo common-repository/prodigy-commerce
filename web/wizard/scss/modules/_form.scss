@@ -1,0 +1,231 @@
+// sass-lint:disable mixins-before-declarations
+@mixin formDemoTable {
+  display: grid;
+  grid-template-columns: 50px 16% 1fr;
+  column-gap: 16px;
+}
+$image-preview-height: 136px;
+$image-preview-placeholder-z-index: 1;
+$image-preview-z-index: 2;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
+  @include media-md {
+    padding: 32px;
+    font-size: 16px;
+  }
+}
+.font__card-outline {
+  padding: 16px 12px;
+  border-radius: 6px;
+  border: 1px solid color(blue-500);
+  font-size: 14px;
+  margin-bottom: 20px;
+  @include media-md {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+}
+.form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  @include media-md {
+    margin-bottom: 24px;
+  }
+}
+.form__body {
+  flex-grow: 1;
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.42;
+}
+.form__body-demo-wrap {
+  overflow: auto;
+}
+.form__body-demo {
+  min-width: 500px;
+}
+.form__body-demo-header {
+  @include formDemoTable();
+}
+.form__body-demo-content {
+  height: 162px;
+  overflow: auto;
+}
+.form__body-demo-item {
+  @include formDemoTable();
+  align-items: baseline;
+  margin-bottom: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 8px;
+}
+.form__body-demo-item--wide {
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 40px;
+}
+.form__body-demo-item-error {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  align-items: center;
+  grid-gap: 4px;
+  margin-top: -6px;
+  margin-bottom: 12px;
+  color: color(red-500);
+  font-size: 12px;
+}
+.form__body-demo-installed {
+  color: rgba(color(grey-500), 0.5);
+  font-size: 12px;
+  line-height: 16px;
+}
+.form__title {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  @include media-md {
+    font-size: 20px;
+  }
+}
+.form__txt-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  @include media-md {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.form__txt {
+  display: block;
+  font-size: 14px;
+}
+.form__footer {
+  display: flex;
+  justify-content: flex-end;
+  :first-child {
+    margin-right: 8px;
+  }
+}
+.form__footer--between {
+  margin-top: 24px;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  @include media-md {
+    flex-direction: row;
+  }
+  .d-flex {
+    justify-content: space-between;
+  }
+  .link-wizard {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.form__footer--two-btn {
+  text-align: center;
+  :first-child {
+    margin-bottom: 8px;
+  }
+  @media (min-width: 460px) {
+    display: flex;
+    justify-content: space-between;
+    :first-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.wp-connect-state {
+  @include media-md {
+    margin-left: 16px;
+  }
+}
+.form__image-preview {
+  position: relative;
+  width: $image-preview-height;
+  height: $image-preview-height;
+  margin-bottom: 12px;
+  border-radius: 2px;
+  background-color: rgba(207, 216, 220, 0.5);
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: $image-preview-placeholder-z-index;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    transform: translate(-50%, -50%);
+    background-image: url('./../images/placeholder.svg');
+    background-size: contain;
+  }
+}
+.form__image-preview--is-loaded {
+  background-color: transparent;
+  &:before {
+    content: none;
+  }
+}
+.form__image {
+  position: relative;
+  z-index: $image-preview-z-index;
+  max-height: $image-preview-height;
+}
+.form__image-label {
+  display: inline-flex;
+  align-items: center;
+}
+.form__input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.form__label {
+  margin-bottom: 8px;
+  color: color(grey-500);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.form__input {
+  width: 100%;
+  max-width: 320px;
+  height: 32px;
+  margin-bottom: 4px;
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.3;
+  &:disabled {
+    border-color: color(grey-300);
+    color: color(grey-350);
+  }
+}
+.form__input-hint {
+  opacity: 0.5;
+  color: color(grey-500);
+  font-size: 12px;
+  line-height: 1.3;
+}
+.form__remove-btn {
+  margin-left: 12px;
+  background-color: transparent;
+  color: color(red-500);
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+// sass-lint:disable no-universal-selectors
+* {
+  box-sizing: border-box;
+}
+// sass-lint:enable no-universal-selectors
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+p,
+h2 {
+  margin-top: 0;
+}
+h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: color(grey-100);
+  color: color(grey-500);
+  font-size: 16px;
+  line-height: 1.5;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-text-fill-color: color(grey-400);
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+img {
+  max-width: 100%;
+}
+div, a {
+  outline: none;
+}

@@ -1,0 +1,7 @@
+@function color($color, $opacity: false) {
+  @if ($opacity != false) {
+    @return rgba(map-get($app-colors, $color), $opacity);
+  } @else {
+    @return map-get($app-colors, $color);
+  }
+}

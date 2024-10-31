@@ -1,0 +1,87 @@
+.prodigy-custom-template {
+  .prodigy-promo-content {
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 40px 52px 64px;
+    background-color: rgba($color: color(blue-550), $alpha: 0.5);
+    @include media-breakpoint-up(md) {
+      padding: 54px;
+      width: 570px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 680px;
+    }
+  }
+  .prodigy-promo-content__title {
+    color: white !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 40px;
+      background-color: white;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+    }
+  }
+  .prodigy-promo-content__txt {
+    color: white !important;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px !important;
+    text-transform: uppercase;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0 !important;
+        font-size: 36px;
+      line-height: 45px;
+      width: 320px;
+    }
+  }
+  .prodigy-promo-content__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .prodigy-promo-content__nav-link {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: white !important;
+    padding: 8px 12px;
+    border: 2px solid white;
+    margin-top: 8px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    min-width: 120px;
+    &:hover {
+      color: rgba($color: color(blue-550), $alpha: 0.5) !important;
+      background-color: white;
+    }
+    @include media-breakpoint-up(md) {
+      min-width: auto;
+      &:not(:first-of-type) {
+        margin-left: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.select2-container {
+  outline: none;
+}
+.select2-container--default {
+  .select2-selection--single {
+    height: 32px;
+    border-radius: 6px;
+    border-color: color(grey-300);
+    outline: none;
+    .select2-selection__rendered {
+      color: color(grey-500);
+      font-size: 12px;
+      line-height: 32px;
+    }
+  }
+}
+.select2-results__options {
+  font-size: 12px;
+}

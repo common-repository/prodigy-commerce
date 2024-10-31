@@ -1,0 +1,21 @@
+.prodigy-admin-custom-template {
+  .prodigy-main-link {
+    color: color(blue-500);
+    text-decoration: none;
+  }
+  .prodigy-main-label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .postbox .inside,
+  .stuffbox .inside {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    .postbox .inside,
+    .stuffbox .inside {
+      font-size: 13px;
+    }
+  }  
+}

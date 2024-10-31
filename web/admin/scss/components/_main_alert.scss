@@ -1,0 +1,24 @@
+.prodigy-admin-custom-template {
+  .prodigy-main-alert{
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 6px 16px;
+    border-left: 4px solid color(green-100);
+    background-color: white;
+  }
+  .prodigy-main-alert--red {
+    border-left-color: color(red-500);
+  }
+  .prodigy-main-alert__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    color: #768492;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .notice {
+    margin-left: 0;
+  }
+}

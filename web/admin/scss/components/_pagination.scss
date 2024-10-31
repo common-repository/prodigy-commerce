@@ -1,0 +1,32 @@
+.prodigy-admin-custom-template {
+    .prodigy-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .prodigy-pagination__item,
+    .prodigy-pagination__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(color(grey-blue-500), 0.5);
+        min-width: 40px;
+        height: 36px;
+        background-color: white;
+        border-radius: 3px;
+        margin-right: 8px;
+        text-decoration: none;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .prodigy-pagination__item--active {
+        color: color(grey-blue-500);
+    }
+    .prodigy-pagination__nav {
+        color: color(grey-blue-500);
+        border: 1px solid rgba(color(grey-blue-500), 0.5);
+        font-size: 18px;
+    }
+}

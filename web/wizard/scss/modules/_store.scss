@@ -1,0 +1,27 @@
+// sass-lint:disable mixins-before-declarations
+.store-info {
+  margin-bottom: 16px;
+  @include media-md {
+    margin-bottom: 32px;
+  }
+}
+.store-info__name {
+  max-width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.store-info__label {
+  color: color(grey-600);
+  @include media-md {
+    min-width: 80px;
+    margin-right: 24px;
+  }
+}
+.store-info__inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  @include media-md {
+    flex-direction: row;
+  }
+}

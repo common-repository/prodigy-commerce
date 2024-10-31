@@ -1,0 +1,33 @@
+.prodigy-promo.prodigy-custom-template {
+  position: relative;
+  margin-top: 0 !important;
+  margin-bottom: 32px !important;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 80px !important;
+  }
+
+  .prodigy-promo__inner {
+    text-align: center;
+    color: white;
+    padding-top: 118px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 118px;
+    }
+  }
+
+  .prodigy-promo__img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: color(grey-600);
+  }
+}

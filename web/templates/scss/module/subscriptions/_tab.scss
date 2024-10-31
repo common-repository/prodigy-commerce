@@ -1,0 +1,72 @@
+.prodigy-custom-template {
+  .prodigy-subscriptions-tab {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+  }
+  .prodigy-subscriptions-tab__item.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 0;
+    padding: 12px 8px;
+    border-radius: 0 !important;
+    color: color(blue-500);
+    border: 1px solid color(grey-300);
+    background-color: white;
+    .prodigy-main-radio__label {
+      white-space: nowrap;
+    }
+    .prodigy-main-radio__icon {
+      margin-right: 8px;
+      &:before {
+        margin-left: -2px;
+      }
+    }
+    &.active {
+      color: white;
+      background-color: color(blue-500);
+      border-color: color(blue-500);
+      .prodigy-main-radio__icon.prodigy-main-radio__icon--on {
+        color: white;
+      }
+      + .prodigy-subscriptions-content .tab-pane {
+        border-color: color(blue-500);
+      }
+    }
+    &:not(.active) {
+      + .prodigy-subscriptions-content .tab-pane {
+        pointer-events: none;
+        .prodigy-main-radio * {
+          color: color(grey-300);
+        }
+      }
+    }
+  }
+  .prodigy-subscriptions-tab__item-title {
+    width: 100%;
+    margin-bottom: 4px;
+    margin-right: 16px;
+    color: color(grey-300);
+    font-size: 14px;
+    line-height: (16 / 14);
+  }
+  .prodigy-subscriptions-tab__item-price {
+    color: color(blue-500);
+    font-weight: bold;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: (25 / 20);
+  }
+  .prodigy-subscriptions-tab__item-sale {
+    color: color(grey-300);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: (20 / 16);
+    text-decoration: line-through;
+    white-space: nowrap;
+  }  
+}

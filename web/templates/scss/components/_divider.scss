@@ -1,0 +1,8 @@
+.prodigy-custom-template {
+    .prodigy-divider-block {
+        border-bottom: $divider-border;
+    }
+    .prodigy-divider-block--light {
+        border-color: color(grey-400);
+    }
+}

@@ -1,0 +1,192 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/custom";
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.prodigy-wrapper-container {
+  .prodigy-custom-template {
+    .entry-content ul {
+      list-style-type: none;
+      padding: 0 !important;
+      line-height: 1.5;
+    }
+    @media screen and (max-width: 768px) {
+      .prodigy-cart__table-info .prodigy-cart__remove-wrapper .prodigy-counter {
+        transform: translateY(0);
+      }
+    }
+    .prodigy-cart__table td.text-right.d-md-table-cell.pt-0.px-md-2 .prodigy-cart__total-price {
+      top: 7px;
+    }
+    .prodigy-cart__table td.text-right.d-md-table-cell.pt-0.px-md-2 .prodigy-counter {
+      bottom: 7px;
+    }
+  }
+  #prodigy-primary {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .prodigy-customized-wrapper {
+    width: 100%;
+    &:before {
+      display: none;
+    }
+  }
+  .mfp-wrap {
+    z-index: 100002;
+  }
+  .mfp-bg {
+    z-index: 100001;
+  }
+}
+.prodigy-empty-cart,
+.prodigy-cart {
+  min-height: 70vh;
+}
+.entry-content table.prodigy-cart__table {
+  border: none;
+}
+.prodigy-cart__table td.text-right.d-md-table-cell.pt-0.px-md-2 .prodigy-cart__total-price {
+  top: 9px;
+}
+.prodigy-cart__table td.text-right.d-md-table-cell.pt-0.px-md-2 .prodigy-counter {
+  bottom: 9px;
+}
+.entry-content tr.item-container-js > td.prodigy-cart__table-product-td {
+  padding: 6px 0;
+}
+@media screen and (max-width: 767.9px) {
+  .prodigy-cart__table tr.item-container-js:first-of-type td {
+    border-top: 1px solid #d9dbe1;
+  }
+}
+#top-menu,
+#et-secondary-menu {
+  .prodigy-custom-template {
+    .prodigy-main-button {
+      display: flex;
+      transition-duration: 150ms;
+      color: white;
+      &:hover {
+        color: white;
+      }
+    }
+    .prodigy-main-button--outline {
+      color: #2a3658;
+      &:hover {
+        color: white;
+      }
+    }
+    .prodigy-cart-total span {
+      padding-bottom: 8px;
+    }
+  }
+}
+#et-secondary-menu>ul>li.prodigy-navbar-cart-wrapper.prodigy-custom-template a.prodigy-main-button {
+  padding-bottom: 0;
+}
+#top-header a.prodigy-cart-item__info-title {
+  color: #2a3658;
+}
+.prodigy-catalog {
+  @include media-breakpoint-down(sm) {
+    width: auto;
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+}
+.mfp-wrap .mfp-container .prodigy-main-button:hover {
+  background-color: #ffcb27 !important;
+}
+.mfp-wrap .mfp-container .prodigy-product__gallery-icon:hover {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+}
+.mfp-wrap .mfp-close:active {
+  top: 0;
+}
+.pswp {
+  z-index: 100002;
+}
+.prodigy-cart {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.prodigy-cart__table {
+  width: 100%;
+  td:not(.prodigy-cart__table-product-td),
+  th {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.entry-content table.prodigy-cart__table {
+  margin: 0;
+}
+.prodigy-navbar-cart-wrapper {
+  @media (max-width: 980px) {
+    top: 0;
+    .prodigy-navbar-cart {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+    }
+  }
+}
+#et-secondary-menu .prodigy-navbar-cart-wrapper {
+  top: 0;
+}
+#main-content .prodigy-custom-template .container:before {
+  display: none !important;
+}
+.prodigy-entry-content-width {
+  #content-area table tr {
+    padding: 0.587em 0;
+    td,th {
+      padding: 0.587em 0;
+    }
+  }
+  .prodigy-cart__table-info-title {
+    a {
+      color: color(blue-550);
+    }
+  }
+}
+.prodigy-sort-container.prodigy-custom-template {
+  .prodigy-top-bar .prodigy-sort {
+    padding: 20px 0;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 1023.9px) {
+  .prodigy-shop-sidebar {
+    top: 112px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .prodigy-shop-sidebar {
+    top: 25vh;
+    height: 75vh;
+  }
+}
+.prodigy-shop-sidebar .flex-row +.prodigy-divider-block {
+  padding-top: 16px;
+}
+.prodigy-product-list__item-container {
+  h3.prodigy-product-list__item-title,
+  .prodigy-product-list__item-rating {
+    margin-bottom: 0;
+  }
+}
+.prodigy-product-list__item.slick-slide {
+  h3.prodigy-product-list__item-title {
+    margin-bottom: 0;
+  }
+}
+.prodigy-navbar-cart:before {
+  content: "divi";
+}

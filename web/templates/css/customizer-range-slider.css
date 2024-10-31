@@ -1,0 +1,113 @@
+.range-slider {
+    width: 100%;
+}
+
+.range-slider > span {
+    width: 100%;
+    display: flex;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (95px));
+    height: 4px;
+    border-radius: 2px;
+    background: #0085ba;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #0085ba;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: #0085ba;
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #0085ba;
+}
+
+.range-slider__range::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border: 0;
+    border-radius: 50%;
+    background: #0085ba;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-moz-range-thumb:hover {
+    background: #0085ba;
+}
+
+.range-slider__range:active::-moz-range-thumb {
+    background: #0085ba;
+}
+
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 46px !important;
+    height: 30px !important;
+    color: #2d3748;
+    text-align: left;
+    border-radius: 0 !important;
+    border: 1px solid #d7dcdf !important;
+    background: #fff;
+    margin-left: 8px !important;
+    font-size: 10px;
+    cursor: text;
+}
+
+.range-slider__value+span {
+    display: inline-block;
+    width: 26px;
+    padding: 5px;
+    color: #2d3748;
+    text-align: left;
+    border-radius: 0;
+    border: 1px solid #d7dcdf;
+    border-left: none;
+    background: #fff;
+    margin-left: 0;
+    font-size: 10px;
+}
+
+/* Remove arrows Chrome, Safari, Edge, Opera */
+input.range-slider__value::-webkit-outer-spin-button,
+input.range-slider__value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.range-slider__value[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+input::-moz-focus-inner, input::-moz-focus-outer {
+    border: 0;
+}

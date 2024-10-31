@@ -1,0 +1,137 @@
+$image-size: 40px;
+$products-list-item-link-offset: 16px;
+
+.prodigy-admin-custom-template {
+    .prodigy-products-list-item__image-head {
+        width: 46px;
+    }
+    .prodigy-products-list-header__search {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        grid-template-rows: 1fr;
+        width: 100%;
+        .button {
+            margin-bottom: 0;
+        }
+        @include media-breakpoint-up(md) {
+            width: auto;
+        }
+    }
+    .prodigy-products-list-item__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $image-size;
+        height: $image-size;
+        background-color: rgba(207,216,220,0.5);
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath fill='%238FA4AF' d='M11.6666667,10.5555556 L11.6666667,2.77777778 C11.6666667,2.16666667 11.1666667,1.66666667 10.5555556,1.66666667 L2.77777778,1.66666667 C2.16666667,1.66666667 1.66666667,2.16666667 1.66666667,2.77777778 L1.66666667,10.5555556 C1.66666667,11.1666667 2.16666667,11.6666667 2.77777778,11.6666667 L10.5555556,11.6666667 C11.1666667,11.6666667 11.6666667,11.1666667 11.6666667,10.5555556 L11.6666667,10.5555556 Z M4.72222222,7.5 L6.11111111,9.17222222 L8.05555556,6.66666667 L10.5555556,10 L2.77777778,10 L4.72222222,7.5 L4.72222222,7.5 Z' id='path-1'%3E%3C/path%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 14px;
+        border-radius: 2px;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .prodigy-products-list-item__title  {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0;
+        max-width: none;
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        @include media-breakpoint-up(md) {
+            display: block;
+            min-height: auto;
+            max-width: 260px;
+        }
+    }
+    .prodigy-products-list-item__links {
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: inline-flex;
+        }
+    }
+    .prodigy-products-list-item__link--sync {
+        border: none;
+        color: #0073aa;
+        background-color: transparent;
+        cursor: pointer;
+        .icon-rotate {
+            display: none;
+        }
+        &.sync-process-button-js.prodigy-products-list-item__link {
+            color: white;
+            background-color: #2271b1;
+        }
+        &:disabled {
+            color: color(grey-200);
+            .icon-info,
+            .icon-sync {
+                display: none;
+            }
+            .icon-rotate {
+                display: block;
+                animation: rotate  1.3s infinite linear;
+            }
+        }
+    }
+    .prodigy-products-list-item__link {
+        position: relative;
+        white-space: nowrap;
+        margin-right: $products-list-item-link-offset;
+        text-decoration: none;
+        &:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            display: none;
+            height: 100%;
+            border-left: 1px solid color(grey-blue-500);
+            bottom: 0;
+            right: -$products-list-item-link-offset / 2;
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+        }
+    }
+    .prodigy-products-list-item__link--show-separator {
+        &:not(:last-child)::after {
+            display: block;
+        }
+    }
+    .prodigy-products-list-item__price {
+        margin: 0 !important;
+    }
+    .prodigy-products-list-item__price--old {
+        text-decoration: line-through;
+    }
+    .prodigy-products-list-item__category {
+        padding-left: 12px !important;
+        @include media-breakpoint-up(md) {
+            padding-left: 20px !important;
+        }
+            &[style] {
+            position: relative;
+            padding-left: calc(var(--nestingLevel) * 12px + 12px) !important;
+            @include media-breakpoint-up(md) {
+                padding-left: calc(var(--nestingLevel) * 28px + 20px) !important;
+            }
+        }
+    }
+    .prodigy-products-list-item__category-divider {
+        position: absolute;
+        width: 1px;
+        top: 0;
+        height: 100%;
+        background-color: color(grey-200);
+        left: calc(var(--order) * 12px + 12px);
+        @include media-breakpoint-up(md) {
+            left: calc(var(--order) * 28px + 20px);
+        }
+    }
+}

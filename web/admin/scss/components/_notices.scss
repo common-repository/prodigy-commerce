@@ -1,0 +1,27 @@
+.prodigy-admin-custom-template-notice {
+  .notice {
+    padding: 10px 60px 9px 20px;
+    border-left-width: 4px;
+    box-shadow: none;
+    margin-left: 0;
+  }
+  .notice-info {
+    border-left-color: color(blue-500);
+  }
+  .notice-dismiss {
+    padding: 10px;
+  }
+  .notice-dismiss:before {
+    content: "\f335";
+    font-size: 22px;
+  }
+  .notice-dismiss:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .notice-dismiss:active:before,
+  .notice-dismiss:focus:before,
+  .notice-dismiss:hover:before {
+    color: initial;
+  }
+}

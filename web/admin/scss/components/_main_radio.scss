@@ -1,0 +1,17 @@
+// sass-lint:disable no-qualifying-elements
+.prodigy-admin-custom-template {
+  input[type='radio'].prodigy-main-radio {
+    width: 16px;
+    height: 16px;
+    border-color: color(grey-blue-500);
+    background-color: transparent;
+  }
+  input[type='radio'].prodigy-main-radio:checked:before {
+    width: 8px;
+    height: 8px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background-color: color(grey-blue-500);
+  }
+}
+// sass-lint:enable no-qualifying-elements

@@ -1,0 +1,24 @@
+{
+  "content": [
+    {
+      "id": "533c78fe",
+      "settings": [],
+      "elements": [
+        {
+          "id": "7635884e",
+          "settings": [],
+          "elements": [],
+          "isInner": false,
+          "widgetType": "pg-cart-widget",
+          "elType": "widget"
+        }
+      ],
+      "isInner": false,
+      "elType": "container"
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Prodigy Cart Template",
+  "type": "cart-prodigy"
+}

@@ -1,0 +1,23 @@
+.prodigy-custom-template {
+  .prodigy-product__attr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+    @media screen and (max-width: 468px) {
+      width: 100%;
+    }
+  }
+  .prodigy-product__attr-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 192px;
+    @media screen and (max-width: 468px) {
+      width: 100%;
+      flex-wrap: wrap;
+      max-width: unset;
+      min-width: unset;
+    }
+  }
+}

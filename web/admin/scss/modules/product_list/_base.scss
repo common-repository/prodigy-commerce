@@ -1,0 +1,22 @@
+.prodigy-admin-custom-template {
+    .prodigy-products-list {
+        padding-right: 20px;
+        @media screen and (max-width: 782px) {
+            padding-right: 10px;
+        }
+    }
+    > .main-categories-container-js {
+        padding-right: 20px;
+        @media screen and (max-width: 782px) {
+            padding-right: 10px;
+        }
+        .prodigy-products-list {
+            padding-right: 0;
+        }
+    }
+}
+.prodigy-product_page_prodigy_categories {
+    #wpfooter {
+        position: relative;
+    }
+}

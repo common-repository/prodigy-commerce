@@ -1,0 +1,206 @@
+.prodigy-custom-template {
+  button {
+    &:not(.mfp-close)
+    &:not(.prodigy-product__gallery-icon)
+    &:not(.prodigy-product__gallery-nav.prodigy-product__gallery-nav-next)
+    &:not(.prodigy-product__gallery-nav.prodigy-product__gallery-nav-prev)
+    &:not(.prodigy-related__products-nav)
+    &:not(.close-subscription-popup-js) 
+    &:not(.replace-subscription-condition-js) {
+      font-size: 14px;
+      height: 40px;
+      padding: 0 16px;
+    }
+  }
+  button,
+  a,
+  .prodigy-main-button {
+    @include focus-visible() {
+      outline: blue auto 1px !important;
+      outline: -webkit-focus-ring-color auto 1px !important;
+    }
+  }
+
+  .prodigy-main-button {
+    @include transition(color, background-color, border-color);
+    @include body-font-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 0;
+    background-color: color(blue-500);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: color(yellow-100);
+      color: white;
+    }
+
+    &[disabled] {
+      background-color: color(grey-350);
+      color: color(grey-100);
+      cursor: not-allowed;
+
+      &:hover {
+        background-color: color(grey-350);
+        color: color(grey-100);
+      }
+    }
+  }
+
+  .prodigy-main-button--wide {
+    min-width: 216px;
+  }
+
+  .prodigy-main-button--disabled {
+    background-color: color(grey-350) !important;
+    color: color(grey-100);
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: color(grey-350) !important;
+      color: color(grey-100);
+    }
+  }
+
+  .prodigy-main-button.prodigy-main-button--link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  a.prodigy-main-button.prodigy-main-button--link {
+    text-decoration: none;
+  }
+
+  .prodigy-main-button--outline {
+    border: 1px solid color(blue-500);
+    background-color: white;
+    color: color(blue-500);
+
+    &:hover {
+      background-color: color(blue-500);
+      color: white;
+    }
+  }
+
+  .prodigy-secondary-button {
+    @include transition(background-color, color);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid color(blue-600);
+    border-radius: 0;
+    background-color: white !important;
+    color: color(blue-500);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: color(blue-500) !important;
+      color: white;
+    }
+  }
+
+  .prodigy-secondary-button--disabled {
+    border: none;
+    background-color: color(grey-350) !important;
+    color: color(grey-100);
+  }
+
+  .prodigy-main-button-outline {
+    @include caption-font-2();
+    padding: 8px 24px;
+    transition: 150ms;
+    border: 2px solid white;
+    color: white;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: transparent;
+      background-color: rgba(white, 0.4) !important;
+    }
+  }
+
+  .prodigy-main-button--counter {
+    width: 34px;
+    height: 40px;
+    min-height: unset;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: color(grey-300);
+    border-radius: 0;
+    border: none;
+    outline: none !important;
+
+    &:disabled {
+      background-color: color(grey-250);
+    }
+  }
+
+  .prodigy-main-button--loading {
+    @extend .icon;
+    @extend .icon-load;
+    color: transparent !important;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      color: white;
+      left: 50%;
+      top: 50%;
+      font-size: 18px;
+      animation: btnLoading 1s linear infinite forwards;
+    }
+  }
+
+  @keyframes btnLoading {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  // prodigy-main-button--disabled prodigy-main-button--loading
+
+  .prodigy-close-button {
+    @include transition(color);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: color(grey-100);
+
+    &:hover,
+    &:focus {
+      background: none;
+      color: color(blue-500);
+    }
+
+    .icon {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.prodigy-admin-custom-template {
+  .prodigy-main-button {
+    padding: 9px 24px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .prodigy-main-button--grey-dark {
+    background-color: color(grey-700);
+  }
+  .prodigy-main-button--grey-light {
+    background-color: color(grey-100) !important;
+  }
+  .prodigy-main-button--blue {
+    background-color: color(blue-500);
+  }
+  .prodigy-main-button-load {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-size: 24px;
+    }
+  }
+  .prodigy-main-button--grey {
+    color: color(grey-700);
+  }
+  .prodigy-main-button--small {
+    height: 28px;
+    padding: 5px 12px;
+    background-color: color(grey-50);
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .prodigy-main-button--disabled {
+    background-color: color(grey-200);
+  }
+  @media screen and (min-width: 768px) {
+    .prodigy-main-button {
+      font-size: 16px;
+    }
+    .prodigy-main-button--small {
+      font-size: 12px;
+    }
+  }
+}
